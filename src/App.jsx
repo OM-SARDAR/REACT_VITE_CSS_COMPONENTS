@@ -53,7 +53,7 @@ function App() {
       {/* <Seller_Form_1 /> */}
       {/* <Update_Form_1 /> */}
 
-      <Product_List_1/>
+      {/* <Product_List_1/> */}
       {/* <Product_List_2 /> */}
       {/* <Product_List_3 /> */}
       {/* <Product_List_4 /> */}
@@ -79,7 +79,7 @@ function App() {
       {/* <Privacy_Page_1/> */}
       {/* <Security_Page_1 /> */}
       {/* <TermsAndConditions_1 /> */}
-      {/* <FAQ_Page_1 /> */}
+      <FAQ_Page_1 />
       {/* <Feedback_Page_1 /> */}
     </div>
   );
