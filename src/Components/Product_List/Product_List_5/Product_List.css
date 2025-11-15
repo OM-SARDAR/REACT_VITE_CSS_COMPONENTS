@@ -1,0 +1,71 @@
+.BidHistory-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 8%;
+  margin-bottom: 3%;
+}
+
+.ordercolor {
+  color: #fff;
+  text-align: center;
+}
+
+.BidHistory-container .card {
+  border-radius: 18px;
+}
+
+/* Fixed size for the image on larger screens */
+.fixed-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover; /* Ensures image fits within the set size */
+  border-radius: 18px;
+}
+
+/* Media query for smaller screens (tablets and phones) */
+@media (max-width: 1024px) {
+  .BidHistory-container {
+    width: 90%;
+    margin-top: 29%;
+    margin-bottom: 15%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .BidHistory-container .fixed-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 18px;
+    margin-top: 2%;
+  }
+
+  .BidHistory-container .card-body {
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .BidHistory-container .card-mb-3 {
+    display: flex;
+  }
+
+  .BidHistory-container .card {
+    margin-bottom: 20px; /* Adds extra spacing between cards */
+    border-radius: 18px;
+  }
+
+  /* Center the button on small screens */
+  .BidHistory-container .col-md-2.text-center {
+    margin-top: 20px;
+  }
+
+  .BidHistory-container .col-md-2 {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+}

@@ -1,0 +1,33 @@
+.BidHistoryDetails-container {
+  width: 90%;
+  height: 60;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 8%;
+  margin-bottom: 2%;
+}
+
+.BidHistoryDetails-container .card {
+  border-radius: 18px;
+}
+
+.BidHistoryDetails-container .middling-image {
+  border-radius: 18px;
+  width: 200%; /* Ensures the image occupies the full width of the column */
+  max-width: 200%;
+}
+
+/* Media query for medium-sized devices (Tablets, etc.) */
+@media (max-width: 768px) {
+  .BidHistoryDetails-container .up-details {
+    margin-top: 28%;
+  }
+
+  .BidHistoryDetails-container .middling-image {
+    width: 100%; /* Ensures the image occupies the full width of the column */
+    max-width: 100%;
+    border-radius: 18px;
+  }
+}

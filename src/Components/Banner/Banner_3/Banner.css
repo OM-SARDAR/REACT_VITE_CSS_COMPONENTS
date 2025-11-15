@@ -1,0 +1,55 @@
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between images */
+  padding: 20px;
+  flex-wrap: nowrap; /* Ensure images stay side by side */
+  overflow-x: auto; /* Allow scrolling if needed */
+}
+
+.image-box {
+  cursor: pointer;
+  flex: 1 1 0; /* Equal space for each image box */
+  max-width: calc(50% - 20px); /* Half of the container width minus gap */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 16 / 9; /* Enforces the same aspect ratio for both images */
+  overflow: hidden; /* Crop any overflow */
+  border-radius: 18px; /* Apply border-radius to the image container */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+/* No transform on .product-banner-image, apply scale and shadow to the container */
+.product-banner-image {
+  width: 100%; /* Image fills the container width */
+  height: 100%; /* Image fills the container height */
+  object-fit: cover; /* Ensures the entire container is filled */
+  border-radius: 18px; /* Ensure border-radius on the image */
+  transition: box-shadow 0.3s; /* Smooth box-shadow transition */
+}
+
+/* Apply transform and hover effect to the image box (container) */
+.image-box:hover {
+  transform: scale(1.05); /* Apply scaling to the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .image-container {
+    gap: 10px; /* Reduce gap for smaller screens */
+    padding: 10px;
+  }
+
+  .image-box {
+    max-width: 50%; /* Side by side layout on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-box {
+    max-width: 100%; /* Stack images vertically on small devices */
+  }
+}
